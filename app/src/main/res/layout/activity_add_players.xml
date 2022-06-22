@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AddPlayers">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="@string/enter_players_names"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#E6DCDC"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/playerOneName"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_corner_view"
+        android:ems="10"
+        android:hint="Enter player 1 name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:padding="13dp"
+        android:textColor="#000000"
+        android:textColorHint="#979696"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/playerTwoName"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner_view"
+        android:ems="10"
+        android:hint="Enter player 2 name"
+        android:inputType="textPersonName"
+        android:padding="13dp"
+        android:maxLines="1"
+
+
+        android:textColorHint="#979696"
+        app:layout_constraintEnd_toEndOf="@+id/playerOneName"
+        app:layout_constraintStart_toStartOf="@+id/playerOneName"
+        app:layout_constraintTop_toBottomOf="@+id/playerOneName" />
+
+    <Button
+        android:id="@+id/start_game_btn"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/rounded_corner_blue"
+        android:backgroundTint="@color/light_blue_btn"
+        android:text="Start game"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/playerTwoName"
+        app:layout_constraintStart_toStartOf="@+id/playerTwoName"
+        app:layout_constraintTop_toBottomOf="@+id/playerTwoName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
